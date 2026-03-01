@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FinGrow Finance</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        background: #f4f7fb;
+      }
+
+      header {
+        background: #0a3d62;
+        color: white;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .hero {
+        background:
+          linear-gradient(rgba(10, 61, 98, 0.8), rgba(10, 61, 98, 0.8)),
+          url("https://images.unsplash.com/photo-1565514020179-026b92b84bb6")
+            center/cover;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+      }
+
+      .hero h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        background: #f39c12;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .btn:hover {
+        background: #d35400;
+      }
+
+      section {
+        padding: 60px 50px;
+        text-align: center;
+      }
+
+      .services {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      .service-box {
+        background: white;
+        padding: 25px;
+        width: 300px;
+        margin: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .service-box h3 {
+        margin-bottom: 15px;
+        color: #0a3d62;
+      }
+
+      .about {
+        background: #ffffff;
+      }
+
+      .contact {
+        background: #0a3d62;
+        color: white;
+      }
+
+      .contact input,
+      .contact textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .contact button {
+        padding: 10px 20px;
+        background: #f39c12;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact button:hover {
+        background: #d35400;
+      }
+
+      footer {
+        background: #06283d;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      @media (max-width: 768px) {
+        .services {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="http://localhost:8000/static/widget.js"
+      data-app-url="http://localhost:9944"
+      data-bot-id="69a3c3bf1f94cdfa8f274546"
+      data-bot-name="fist"
+    ></script>
+    <header>
+      <h1>FinGrow Finance</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Secure Your Financial Future</h2>
+      <p>
+        We provide trusted financial solutions for individuals and businesses.
+      </p>
+      <a href="#contact" class="btn">Get Consultation</a>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service-box">
+          <h3>Investment Planning</h3>
+          <p>
+            Grow your wealth with smart investment strategies tailored to your
+            goals.
+          </p>
+        </div>
+        <div class="service-box">
+          <h3>Loan Services</h3>
+          <p>Quick and easy loans with competitive interest rates.</p>
+        </div>
+        <div class="service-box">
+          <h3>Tax Consulting</h3>
+          <p>Professional tax advice to maximize savings and compliance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        FinGrow Finance is dedicated to helping clients achieve financial
+        stability and long-term growth. With years of experience in financial
+        planning, we ensure transparency, trust, and excellence.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required /><br />
+        <input type="email" placeholder="Your Email" required /><br />
+        <textarea rows="4" placeholder="Your Message" required></textarea><br />
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2026 FinGrow Finance | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
